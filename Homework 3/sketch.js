@@ -207,7 +207,7 @@ class Particle {
     this.pos.add(this.vel);
     this.acc.mult(0);
 
-    // Update glow intensity and direction
+
     this.glowIntensity += this.glowDirection;
     if (this.glowIntensity >= 255 || this.glowIntensity <= 50) {
       this.glowDirection *= -1;
