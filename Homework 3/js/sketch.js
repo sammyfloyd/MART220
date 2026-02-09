@@ -1,5 +1,23 @@
 let particles = [];
 
+var img1;
+var img2; 
+var img3;
+
+var timerValue = 10;
+
+var x = 10
+var y = 100
+
+let myFont;
+
+
+function preload() {
+  img1 = loadImage('./images/french toast.png');
+  img2 = loadImage('./images/ice cream.png');
+  img3 = loadImage('./images/pizza.png');
+  myFont = loadFont('assets/Barrio-Regular.ttf');
+}
 
 
 
@@ -9,10 +27,9 @@ function setup() {
   for (let i = 0; i < 50; i++) {
     particles.push(new Particle(random(width), random(height)));
   }
-
+  
+  setInterval(timeIt, 1000);
 }
-
-
 
 
 function draw() {
@@ -45,6 +62,10 @@ function draw() {
   noStroke();
   fill(255, 221, 0);
   circle(300, 400, 100);
+  
+  
+  //PIZZA
+  image(img3, 150, 250, 300, 300);
   
   
   //grass
@@ -151,17 +172,55 @@ function draw() {
   triangle(590, 400, 610, 210, 630, 400);
   
   
+  fill(255, 165, 0);
+    textFont(myFont);
+    textSize(40);
+    text("Sunset Fireflies",20,50);
+  
+  fill(255, 221, 0);
+    textFont(myFont);
+    textSize(15);
+    text("Click the fireflies away!",380,40);
+  
   fill(0);
+    textFont(myFont);
     textSize(25);
-    text("Sam Floyd",460,575);
-    text("Sunset Fireflies",20,40);
+     text("Sam Floyd",460,580);
+  
+  
+  //ICE CREAM
+  image(img2, 460, 210, 100, 210);
   
   
   for (let i = 0; i < particles.length; i++) {
     particles[i].update();
     particles[i].display();
   }
+  
+  
+  if (timerValue >= 10) {
+    text("0:" + timerValue, width / 2.10, height / 5);
+  }
+
+  if (timerValue < 10) {
+    text("0:0" + timerValue, width / 2.10, height / 5);
+  }
+
+  if (timerValue == 0) {
+    text("game over", width / 2.40, height / 4 + 15);
+    //TOAST 
+    image(img1, x, 450, 100, 100);
+    x++;
+  }
+  
 }
+
+function timeIt() {
+  if (timerValue > 0) {
+    timerValue--;
+  }
+}
+
 
 
 
@@ -207,7 +266,7 @@ class Particle {
     this.pos.add(this.vel);
     this.acc.mult(0);
 
-
+    // Update glow intensity and direction
     this.glowIntensity += this.glowDirection;
     if (this.glowIntensity >= 255 || this.glowIntensity <= 50) {
       this.glowDirection *= -1;
@@ -236,3 +295,4 @@ class Particle {
     }
   }
 }
+
