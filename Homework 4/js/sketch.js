@@ -13,9 +13,9 @@ let myFont;
 
 
 function preload() {
-  img1 = loadImage('./images/french toast.png');
-  img2 = loadImage('./images/ice cream.png');
-  img3 = loadImage('./images/pizza.png');
+  img1 = loadImage('images/french toast.png');
+  img2 = loadImage('images/ice cream.png');
+  img3 = loadImage('images/pizza.png');
   myFont = loadFont('assets/Barrio-Regular.ttf');
 }
 
