@@ -13,6 +13,8 @@ let frameIndex = 0;
 //animation speed
 let speed = 5;
 
+//barrio-regular font
+let myFont;
 
 function preload() {
 
@@ -27,6 +29,9 @@ function preload() {
     frames[i] = loadImage(folder2 + "frame" + i + ".png");
   }
   
+  //font
+  myFont = loadFont('assets/Barrio-Regular.ttf');
+
 }
 
 
@@ -41,10 +46,12 @@ function setup() {
 function draw() {
   background(220);
   
+  //BG
   noStroke();
   fill(162, 216, 246);
   rect(0, 0, 600, 600);
   
+
   //food images display
   for (let i = 0; i < images.length; i++){
     image(images[i], i * 200, 0 , 200, 200);
@@ -62,4 +69,11 @@ function draw() {
     }
   }
   
+
+  //name
+  fill(0);
+    textFont(myFont);
+    textSize(25);
+    text("Sam Floyd",460,580);
+
 }
