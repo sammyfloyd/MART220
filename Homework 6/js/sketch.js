@@ -4,17 +4,24 @@ let totalImages = 3;
 let folder1 = "images/";
 let index = 0;
 
-//animation frames
-let frames = [];
-let totalFrames = 8;
+//run frames
+let runFrames = [];
+let totalrFrames = 8;
 let folder2 = "assets/dogrun/";
 let frameIndex = 0;
 
-//animation speed
-let speed = 5;
+//idle frames
+let idleFrames = [];
+let totaliFrames = 10;
+let folder3 = "assets/dogidle/";
 
-//barrio-regular font
-let myFont;
+
+
+let speed = 5;
+var x = 0;
+var y = 0;
+var count = 0;
+
 
 function preload() {
 
@@ -25,13 +32,12 @@ function preload() {
   }
   
   //animation loop
-  for (let i = 0; i < totalFrames; i++) {
-    frames[i] = loadImage(folder2 + "frame" + i + ".png");
+  for (var i = 0; i < 10; i++) {
+    idleFrames[i] = (folder3 + "frame" + i + ".png");
+    runFrames[i] = (folder2 + "frame" + i + ".png");
+
   }
   
-  //font
-  myFont = loadFont('assets/Barrio-Regular.ttf');
-
 }
 
 
@@ -44,36 +50,55 @@ function setup() {
 
 
 function draw() {
+  
+  
   background(220);
   
-  //BG
   noStroke();
   fill(162, 216, 246);
   rect(0, 0, 600, 600);
   
-
   //food images display
   for (let i = 0; i < images.length; i++){
     image(images[i], i * 200, 0 , 200, 200);
   }
   
-  
-  //animation display
-  image(frames[frameIndex], 1, 100);
-
+  console.log(frameCount);
   if (frameCount % speed === 0) {
-    frameIndex++;
+      count = (count + 1) % idleFrames.length;
+    }
+  
+  
+  //key pressed
+  if (keyIsPressed) {
+    if (key == "a") {
 
-    if (frameIndex >= frames.length) {
-      frameIndex = 0;
+      x -= speed;
+     image(idleFrames[count], x, y);
+    if (key == "w") {
+        y -= speed;
+     image(idleFrames[count], x, y);
+    }
+    if (key == "d") {
+      x += speed;
+     image(idleFrames[count], x, y);
+    }
+    if (key == "s") {
+         y += speed;
+     image(idleFrames[count], x, y);
+    }
+   
+  }
+   else
+    {
+      image(idleFrames[count], x, y);
     }
   }
-  
 
-  //name
-  fill(0);
-    textFont(myFont);
-    textSize(25);
-    text("Sam Floyd",460,580);
-
+function timeIt() {
+  count++;
+  if (count >= idleFrames.length) {
+    count = 0;
+  }
+}
 }

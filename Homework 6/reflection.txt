@@ -1,3 +1,3 @@
-(I apologize for forgetting to credit the code I referenced for the fireflies, here is the link to rbbtz's .js file, https://github.com/rbbtz/fireFlies/blob/main/fireFlies/fireFliesScript.js !)
+I apologize for my incomplete work this week, I was using your example to try and understand the animation as well as the classes better, but I still couldn't get it fully finished. I managed to make the run animation work on it's own, but when I try to load the both like you did with the keyPressed command, the sprite suddenly won't show up. I am wondering what I did wrong here to cause this? When I go to use the keys, the console states "[sketch.js, line 93] image() was expecting p5.Image|p5.Element|p5.Texture|p5.Framebuffer|p5.FramebufferTexture for the first parameter, received string instead." I'm not sure what this means.
 
-I had one of my friend's help me this week for some of the loop coding.
+I also really struggled to understand how to use classes when I am drawing more than just one object. Again, I apologize, I was having a hard time this week with the concepts as well as the migraines.
