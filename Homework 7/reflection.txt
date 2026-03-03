@@ -1,0 +1,8 @@
+I apologize that this assignment isn't more finished. I have been struggling a lot with understanding the concepts of arrays and classes, and have tried reaching out to other students as well as find resources online but I am still confused in some areas. The biggest things I am struggling with right now are getting the food images to show up randomly as well as some of the collision work. If I could figure out the images and how I should be setting up the class for it to display the images correctly, I think I would have an easier time figuring out the collisions.
+
+I did the most work I could while still having some blanks here and there, and I was using ehagen's example: https://editor.p5js.org/ehagan/sketches/_MWWTnpBt at the end to try and play around with the score as well as collision detection to try and figure it out. 
+
+One more thing I am confused on is the values I should give to the w and h variables to make the sprite move as it should up and down.
+
+I would love some input on what would be the best plan of action to make sure I'm getting everything done as it should be and understand the concepts. I apologize for the inconvenience! 
+

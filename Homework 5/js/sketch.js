@@ -14,7 +14,7 @@ let frameIndex = 0;
 let speed = 5;
 
 //barrio-regular font
-let myFont;
+  myFont = loadFont('assets/Barrio-Regular.ttf');
 
 function preload() {
 
