@@ -7,11 +7,11 @@ let myAnimation;
 
 function preload() {
     
-    for(var i = 0; i <1; i++)    {
+    for(var i = 0; i < 10; i++)    {
         idlePaths[i] = 'assets/dogidle/' +  'frame' + i + '.png';
        
     }
-    for(var j = 0; j < 10; j++)    {
+    for(var j = 0; j < 8; j++)    {
         walkPaths[j] = 'assets/dogwalk/' +  'frame' + i + '.png';
        
     }
@@ -25,7 +25,7 @@ function setup() {
     
     //compact way to add an image
   	dogImage = new Sprite();
-	  dogImage.image = 'assets/dog.png';
+	dogImage.image = 'assets/dog.png';
     dogImage.pos.x = 250;
     dogImage.pos.y = 200;
     //dogImage.scale = 0.05;
