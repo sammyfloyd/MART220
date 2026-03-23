@@ -21,7 +21,7 @@ function preload() {
 
 function setup() {
   
-    new Canvas(600, 600);
+    new Canvas(1000, 400);
     
     //compact way to add an image
   	dogImage = new Sprite();
