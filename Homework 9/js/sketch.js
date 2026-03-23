@@ -27,7 +27,7 @@ function setup() {
   dogImage.image = 'assets/dogidle/frame0.png';
   dogImage.pos.x = 200;
   dogImage.pos.y = 300;
-  dogImage.scale = 0.05;
+  dogImage.scale = 1;
   dogImage.width = 100;
   dogImage.height = 100;
   dogImage.collider = 'rectangle';
