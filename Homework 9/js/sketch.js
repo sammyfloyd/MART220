@@ -25,9 +25,9 @@ function setup() {
   
   dogImage = new Sprite();
   dogImage.image = 'assets/dogidle/frame0.png';
-  dogImage.pos.x = 200;
-  dogImage.pos.y = 300;
-  dogImage.scale = 1;
+  dogImage.pos.x = 400;
+  dogImage.pos.y = 200;
+  //dogImage.scale = 1;
   dogImage.width = 100;
   dogImage.height = 100;
   dogImage.collider = 'rectangle';
