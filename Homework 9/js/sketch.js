@@ -39,7 +39,7 @@ function setup() {
 	//myAnimation.scale = 0.5;
     
  
-
+    idleAnimation = loadAni('assets/dogidle/frame0.png', 7);
 
    // idleAnimation = loadAni(idlePaths[0], idlePaths[1], idlePaths[2], idlePaths[3], 
    // idlePaths[4], idlePaths[5],idlePaths[6], idlePaths[7], idlePaths[8],
@@ -77,8 +77,8 @@ function update()
   fill(92,184,122);
   rect(0, 250, width, height/2);
     
-   // walkAnimation.scale = 0.5;
-   // animation(idleAnimation, 250, 100);
+  //idleAnimation.scale = 0.5;
+  animation(idleAnimation, 250, 100);
     
     //walkAnimation.frameDelay = 5;
     //animation(walkAnimation, 250, 100);
