@@ -44,7 +44,19 @@ function setup() {
 function update() {
 
     clear();
+
+  //background
+  background(163,212,255);
   
+  //sun 
+  noStroke();
+  fill(237,165,103);
+  circle(500, 250, 250)
+  
+  //grass
+  noStroke();
+  fill(92,184,122);
+  rect(0, 250, width, height/2);
   
   if (kb.pressing('d')) {
     myAnimation.updatePosition('forward');
