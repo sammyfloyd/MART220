@@ -7,7 +7,7 @@ let myAnimation;
 
 function preload() {
     
-    for(var i = 0; i < 15; i++)    {
+    for(var i = 0; i <1; i++)    {
         idlePaths[i] = 'assets/dogidle/' +  'frame' + i + '.png';
        
     }
@@ -63,6 +63,19 @@ function update()
 {
 
     clear();
+
+  //background
+  background(163,212,255);
+  
+  //sun 
+  noStroke();
+  fill(237,165,103);
+  circle(500, 250, 250)
+  
+  //grass
+  noStroke();
+  fill(92,184,122);
+  rect(0, 250, width, height/2);
     
    // walkAnimation.scale = 0.5;
    // animation(idleAnimation, 250, 100);
