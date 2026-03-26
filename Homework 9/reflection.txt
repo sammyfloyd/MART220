@@ -1,0 +1,9 @@
+Although I initially struggled a lot with this assignment, after getting some help from my younger sibling (who happens to be a coding whiz) while visiting back home, I was able to understand p5.play and how to put everything together much better! I really struggled with combining concepts or knowing exactly what to type in order to make a variable work the way I had wanted it to, but she was able to show me some videos as well as help explain some of the more nitty gritty that I didn't get. To make my p5.play game, I implimented both the playable character and objects as sprites that would interact and collide with each other in a certain way. If the dog collides with the bones, the score will increase; if he collides with the logs, it will just act as an obsticle that prevents his movement; lastly, if he collides with the bees, his health will decrease and gameplay ends once it reaches 0. I had a hard time figuring out how to switch animations for the dog sprite because my sketch wouldn't load and the console log wasn't being too helpful so he is animated constantly instead to fulfill the requirement. I did not use AI at all for this assignment.  
+
+Below are the specific examples and tutorials I referenced:
+
+p5.js example: https://editor.p5js.org/davidbouchard/sketches/aBMzUPDmF
+
+video tutorial: https://www.youtube.com/watch?v=ZQ23FHfgA0A 
+
+Both credits go to David Bouchard.
