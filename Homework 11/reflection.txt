@@ -1,0 +1,17 @@
+I once again referenced David Bouchard's online tutorials to help follow along with this week.
+
+Below are the specific examples and tutorials I referenced for this week:
+
+p5.js example: https://editor.p5js.org/davidbouchard/sketches/-ZKmAHYCE
+
+video tutorial: https://www.youtube.com/watch?v=0t0xyBew5BQ 
+
+Credits go to David Bouchard.
+
+Although I am getting much more comfortable with the coding we have been doing and understanding a lot more, I had some trouble when it came to adding the particles at first because anytime the collision between the bee and the dog happened, my whole game would break. I was eventually able to fix this by redirecting and adding the particles in a different way and following David's tutorial online. Instead of the particles following a mouse, however, I changed it so that they would appear after the beeHit collision.
+
+I also couldn't find out how to make the other bees disappear like the first one, and when I was messing around with making them individual sprites instead of a group to try and fix this, it broke my game again and I could not figure out why. I was able to get my younger sibling to look it over with me as we tried to figure out why it suddenly moves all the other sprites to the top left corner but we could not get it. The console log also was very unhelpful, as it was referencing a line that didn't exist in my code. I apologize that my game doesn't follow through all the way because of this, it was very frustrating but I still tried to add in the win message and so on to fulfill as much of the requirements as I could. I also wasn't sure if you wanted 5 different food items or if they could be the same, just as long as there are at least 5 of them so that is what I kept it as. If this wasn't the case, please let me know. 
+
+Other than these issues, I honestly had a lot of fun. I figured I'd make the particles represent a blood splatter to illustrate that the bees are getting harmed, and made the dog bones increase the dog sprite's health so that the player would be able to theoretically kill all the bees without losing all their health first (if I was able to get the rest of the bees to work the way I want them to). I'm getting so much more familiar with the coding language, and I was able to do a lot of this assignment through writing it myself, rather than implimenting code and mish-meshing it to fit my needs, because I knew it, which was a nice feeling.
+
+I did not use AI for this assignment.
