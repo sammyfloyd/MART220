@@ -182,7 +182,7 @@ function beeHit(dog, bee) {
   dog.health--;
   bees.health--;
   if (bees.health == 0) {
-  bee.remove();
+  bees.remove();
   }
 }
 
